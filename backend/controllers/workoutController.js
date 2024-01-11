@@ -59,7 +59,6 @@ const deleteWorkout = async (req,resp) =>{
 //update a workout
 const updateWorkout = async (req,resp) =>{
 
-
     const { id } = req.params
     if (!mongoose.Types.ObjectId.isValid(id)){
         return resp.status(404).json({error:'No such workout'})
