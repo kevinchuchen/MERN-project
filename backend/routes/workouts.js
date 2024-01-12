@@ -14,7 +14,6 @@ const router = express.Router()
 //get all workouts
 router.get('/',getWorkouts)
 
-
 //get single workout
 router.get('/:id',getWorkout)
 
